@@ -19,7 +19,9 @@ public class CSV {
 			cp = line.split(",");
 			cps = cp[0]+cp[1];
 			c.add(new PojoClass(cp [0],cp[1],cp[2],cp[3],cp[4],cp[5],cps));
+			System.out.println(c); //Print all the datas in CSV file
 			Collections.sort(c,new CurrencyPairComparator());
+			System.out.println(c); //Print shorted order by CurrencyPair
 		}
 		for(PojoClass s1:c) {
 			System.out.println(s1);
